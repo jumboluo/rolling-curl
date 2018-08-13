@@ -1,7 +1,7 @@
 RollingCurl was written by Josh Fraser ([joshfraser.com](http://joshfraser.com)) and is released under the Apache License 2.0
 Maintained by Alexander Makarov ([rmcreative.ru](http://rmcreative.ru/))
 
-##Overview
+## Overview
 
 RollingCurl is a more efficient implementation of `curl_multi()`. 
 
@@ -19,9 +19,9 @@ _cURL_ requests to allow for maximum throughput. Each time a request is complete
 links, we keep a constant number of links downloading at all times. This gives us a way to throttle the amount of simultaneous requests we are sending. 
 The result is a faster and more efficient way of processing large quantities of _cURL_ requests in parallel.
 
-##Usage
+## Usage
 
-###Example 1 - Hello world:
+### Example 1 - Hello world:
 an array of URL's to fetch
 
 ```php
@@ -61,7 +61,7 @@ $rc->execute();
 
 
 
-###Example 2 - Setting custom options:
+### Example 2 - Setting custom options:
 
 Set custom options for EVERY request:
 
@@ -80,7 +80,7 @@ $rc->execute();
 
 ```
 
-###Example 3 - Shortcuts:
+### Example 3 - Shortcuts:
 
 ```php
 $rc = new RollingCurl("request_callback");
@@ -89,7 +89,7 @@ $rc->get("http://www.yahoo.com");
 $rc->execute();
 ```
 
-###Example 4 - Class callbacks:
+### Example 4 - Class callbacks:
 
 ```php
 class MyInfoCollector {
